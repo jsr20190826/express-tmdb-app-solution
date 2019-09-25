@@ -1,0 +1,51 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  width: 20%;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.links {
+  width: 80%;
+  display: flex
+}
+
+.link {
+  display: block;
+  padding: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  border-top: 1px solid gray;
+  margin-top: auto;
+  min-height: 60px;
+}
+
+.footer-item {
+  margin-top: 8px;
+}
