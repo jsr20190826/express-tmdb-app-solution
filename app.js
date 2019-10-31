@@ -52,7 +52,7 @@ app.get('/popular-movies', async (req, res) => {
   console.log(data.results)
   const movies = data.results
 
-  res.render('movie-list', {
+  res.render('movies', {
     movies: movies
   })
 })
@@ -64,7 +64,7 @@ app.get('/movies/:id', async (req, res) => {
   const data = await tmdbApi(`movie/${movieId}`)
   console.log(data)
 
-  res.render('movie-detail', {
+  res.render('movie', {
     movie: data
   })
 })
